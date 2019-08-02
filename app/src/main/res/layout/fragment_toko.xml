@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteBg"
+    tools:context=".view.fragment.TokoFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:paddingTop="24dp"
+            android:paddingEnd="8dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:navigationIcon="@drawable/ic_menu"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="Toko"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="182dp">
+
+                <LinearLayout
+                    android:id="@+id/search_container"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/curved_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_search" />
+
+                    <EditText
+                        android:id="@+id/editText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="10"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:fontFamily="@font/open_sans"
+                        android:hint="Cari toko, makanan, oleh-oleh ..."
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+                <ImageButton
+                    android:id="@+id/suvenir"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg"
+                    android:elevation="4dp"
+                    android:focusableInTouchMode="true"
+                    android:src="@drawable/btn_suvenir"
+                    app:layout_constraintEnd_toEndOf="@+id/search_container"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/search_container"
+                    app:layout_constraintTop_toBottomOf="@+id/search_container">
+
+                    <requestFocus />
+                </ImageButton>
+
+
+                <ImageButton
+                    android:id="@+id/kuliner"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg_yellow"
+                    android:elevation="4dp"
+                    android:focusableInTouchMode="true"
+                    android:src="@drawable/btn_kuliner"
+                    app:layout_constraintEnd_toEndOf="@+id/search_container"
+                    app:layout_constraintHorizontal_bias="0.33"
+                    app:layout_constraintStart_toStartOf="@+id/search_container"
+                    app:layout_constraintTop_toBottomOf="@+id/search_container" />
+
+                <ImageButton
+                    android:id="@+id/baju"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg"
+                    android:elevation="4dp"
+                    android:focusableInTouchMode="true"
+                    android:src="@drawable/btn_baju"
+                    app:layout_constraintEnd_toEndOf="@+id/search_container"
+                    app:layout_constraintHorizontal_bias="0.66"
+                    app:layout_constraintStart_toStartOf="@+id/search_container"
+                    app:layout_constraintTop_toBottomOf="@+id/search_container" />
+
+                <ImageButton
+                    android:id="@+id/aksesoris"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg_yellow"
+                    android:elevation="4dp"
+                    android:focusableInTouchMode="true"
+                    android:src="@drawable/btn_aksesoris"
+                    app:layout_constraintEnd_toEndOf="@+id/search_container"
+                    app:layout_constraintHorizontal_bias="0.99"
+                    app:layout_constraintStart_toStartOf="@+id/search_container"
+                    app:layout_constraintTop_toBottomOf="@+id/search_container" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Suvenir"
+                    app:layout_constraintEnd_toEndOf="@+id/suvenir"
+                    app:layout_constraintStart_toStartOf="@+id/suvenir"
+                    app:layout_constraintTop_toBottomOf="@+id/suvenir" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Kuliner"
+                    app:layout_constraintEnd_toEndOf="@+id/kuliner"
+                    app:layout_constraintStart_toStartOf="@+id/kuliner"
+                    app:layout_constraintTop_toBottomOf="@+id/kuliner" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Pakaian"
+                    app:layout_constraintEnd_toEndOf="@+id/baju"
+                    app:layout_constraintStart_toStartOf="@+id/baju"
+                    app:layout_constraintTop_toBottomOf="@+id/baju" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Aksesoris"
+                    app:layout_constraintEnd_toEndOf="@+id/aksesoris"
+                    app:layout_constraintStart_toStartOf="@+id/aksesoris"
+                    app:layout_constraintTop_toBottomOf="@+id/aksesoris" />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_toko"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

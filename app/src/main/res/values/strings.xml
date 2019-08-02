@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">POS Customer</string>
+
+    <array name="menuOptions">
+        <item>Toko</item>
+        <item>Event</item>
+        <item>Achievement</item>
+        <item>Settings</item>
+    </array>
+
+    <integer-array name="toko_id">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </integer-array>
+
+    <string-array name="toko_nama">
+        <item>Toko Suvenir Mulia</item>
+        <item>Toko Citra Niaga Baru</item>
+        <item>UKM Center</item>>
+        <item>Souvenir Anugrah</item>
+        <item>Amplang 89</item>
+        <item>Jananan Khas Samarinda</item>
+        <item>Amplang Afifah</item>
+        <item>Karya Bahari</item>
+        <item>Toko Murah</item>
+        <item>Reny Butik</item>
+        <item>Sarifah Butik</item>
+        <item>Toko Suci</item>
+        <item>Toko Mahakam</item>
+        <item>Rinda Gallery</item>
+        <item>Selamat Aksesoris</item>
+    </string-array>
+
+    <string-array name="toko_kategori">
+        <item>Suvenir</item>
+        <item>Suvenir</item>
+        <item>Suvenir</item>
+        <item>Suvenir</item>
+        <item>Kuliner</item>
+        <item>Kuliner</item>
+        <item>Kuliner</item>
+        <item>Kuliner</item>
+        <item>Baju</item>
+        <item>Baju</item>
+        <item>Baju</item>
+        <item>Baju</item>
+        <item>Aksesoris</item>
+        <item>Aksesoris</item>
+        <item>Aksesoris</item>
+    </string-array>
+
+    <string-array name="toko_foto">
+        <item>"https://iwanketch.files.wordpress.com/2010/01/souvenir.jpg"</item>
+        <item>"https://media-cdn.tripadvisor.com/media/photo-s/09/90/0e/20/pasar-inpres-kebun-sayur.jpg"</item>
+        <item>"https://www.pegipegi.com/travel/wp-content/uploads/2016/08/oleh-oleh-khas-semarang.jpg"</item>
+        <item>"http://cdn-2.tstatic.net/tribunnews/foto/bank/images/citra-niaga-samarinda_20150519_135026.jpg"</item>
+        <item>"https://cf.shopee.co.id/file/b96095410d7d33dc16b4ea0588786099"</item>
+        <item>"https://makananoleholeh.com/wp-content/uploads/2018/11/Amplang-Khas-Samarinda.jpg"</item>
+        <item>"https://media-cdn.tripadvisor.com/media/photo-s/07/f9/c2/17/east-kalimantan-center.jpg"</item>
+        <item>"http://www.infomakan.com/wp-content/uploads/2014/07/amplang2.jpg"</item>
+        <item>"https://images1.prokal.co/webkp/file/berita/2015/07/09/diskon-besar-di-planet-surf.jpg"</item>
+        <item>"https://edratna.files.wordpress.com/2012/04/berbagai-pilihan-baju-jadi-di-pasar-pagi-samarinda.jpg"</item>
+        <item>"https://cdn2.tstatic.net/tribunnews/foto/bank/images/tapis-lampung_20150821_160214.jpg"</item>
+        <item>"https://cdn2.tstatic.net/makassar/foto/bank/images/salah-satu-stand-menjual-baju-di-pasar-sentral-bantaeng_20160625_135824.jpg"</item>
+        <item>"http://cdn-2.tstatic.net/tribunnews/foto/bank/images/citra-niaga-samarinda_20150519_135026.jpg"</item>
+        <item>"http://www.harianbernas.com/online/public/foto_news/image_news_535/01460860301Pusat-oleholeh.JPG"</item>
+        <item>"https://cdn2.tstatic.net/tribunnews/foto/bank/images/mandau-kalbar-pontianak-kerajinan_20150519_191642.jpg"</item>
+    </string-array>
+
+    <integer-array name="toko_favorit">
+        <item>1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </integer-array>
+
+    <integer-array name="event_id">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </integer-array>
+
+    <string-array name="event_nama">
+        <item>"Beli oleh-oleh, gratis makan"</item>
+        <item>"Beli 3 baju, dapatkan suvenir khas samarinda"</item>
+        <item>"Belanja total 100rb, dapatkan diskon 50rb"</item>
+    </string-array>
+
+    <string-array name="event_deskripsi">
+        <item>"Cape keliling Citra Niaga Samarinda untuk nyari oleh-oleh buat kesayangan dirumah? pasti lapar kan?. Ayo segera tunjukan struk belanja kamu di Citra Niaga, dan dapatkan 1 paket makan di toko ini. Jangan sampai kehabisan!"</item>
+        <item>"Beli baju di 3 toko Citra Niaga Samarinda, dan dapatkan sebuah suvenir cantik khas samarinda. Ayo buruan sebelum kehabisan!, happy shopping di Citra Niaga Samarinda"</item>
+        <item>"Jangan takut borong barang di Citra Niaga Samarinda, karena bakalan dapat diskon 50rb di semua toko di Citra Niaga Samarinda!, syarat dan ketentuan berlaku"</item>
+    </string-array>
+
+    <string-array name="event_tanggal">
+        <item>"4 Agustus 2019"</item>
+        <item>"5 Agustus 2019"</item>
+        <item>"6 Agustus 2019"</item>
+    </string-array>
+
+    <string-array name="event_foto">
+        <item>"http://id-blog.zenrooms.com/wp-content/uploads/2017/08/20479167_2316396315252770_7542815097014452224_n.jpg"</item>
+        <item>"https://apollo-singapore.akamaized.net/v1/files/aa35hwwr5ee92-ID/image;s=966x691;olx-st/_1_.jpg"</item>
+        <item>"https://www.giladiskon.com/images/deals/poster–ig–yes–2018–636800284763344051.jpg"</item>
+    </string-array>
+
+</resources>

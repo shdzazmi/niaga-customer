@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivChallenge"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/challenge" />
+
+        <TextView
+            android:id="@+id/tvNamaChallenge"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/open_sans_semibold"
+            android:lineSpacingExtra="-4sp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="2dp"
+            android:text="Beli oleh-oleh seharga Rp 100K, gratis makan"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginEnd="4dp"
+                app:srcCompat="@drawable/ic_date" />
+
+            <TextView
+                android:id="@+id/tvTanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:lineSpacingExtra="-4sp"
+                android:text="4 Agustus 2019"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

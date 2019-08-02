@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="164dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="-12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivToko"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/toko_placeholder"
+            app:riv_corner_radius="12dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="-16dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:contentPadding="8dp"
+        app:contentPaddingLeft="12dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvNamaToko"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans_semibold"
+                android:maxLines="1"
+                android:text="Niaga Cafe"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/btnFav"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvKategori"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:text="Food &amp; beverages"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvNamaToko" />
+
+            <ImageButton
+                android:id="@+id/btnFav"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_heart_grey" />
+
+            <LinearLayout
+                android:id="@+id/star_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/ic_star" />
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/ic_star" />
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/ic_star" />
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/ic_star" />
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/ic_star" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
